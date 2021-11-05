@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* для Chrome/Edge/Safari */
+
+*::-webkit-scrollbar {
+    height: 20px;
+    width: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 7.5px solid;
+}
+
+.navigation {
+    height: 100vh;
+    background-color: #25272A;
+    color: rgba(255, 255, 255, 0.5);
+    overflow-y: scroll;
+}
+
+.navigation::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #25272A;
+}
+
+.nav__header,
+.mes_header {
+    padding-top: 2rem;
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.mes_header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.mes_header p {
+    margin-bottom: 0;
+}
+
+.chat_name::before {
+    content: "#";
+}
+
+.chat_name img {
+    height: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+}
+
+.statistics,
+.mes_search {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #A4A4A4;
+}
+
+.statistics {
+    margin-right: 1.5rem;
+}
+
+.statistics img {
+    padding-right: 0.5rem;
+}
+
+.mes_search {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 0.25rem;
+    height: 2rem;
+    padding: 0 1rem;
+    margin-right: 1.5rem;
+}
+
+.mes_search input {
+    height: 1.5rem;
+    padding: 0;
+}
+
+.mes_search button {
+    padding: 0;
+}
+
+#button-addon3 img {
+    margin-bottom: 0.2rem;
+}
+
+.icon_btn {
+    padding-right: 1.5rem;
+}
+
+.icon_btn:last-child {
+    padding-right: 0;
+}
+
+.nav_ch::before {
+    content: "# ";
+}
+
+.active {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+}
+
+.nav_fr img,
+.ch_ava {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.25rem;
+}
+
+.ch_ava {
+    margin-top: 3px;
+}
+
+.online::marker {
+    color: #70CC16;
+}
+
+.nav__header .dropdown-toggle::after {
+    height: 0.75rem;
+    width: 0.75rem;
+    vertical-align: 0;
+    background-repeat: no-repeat;
+    background-size: 0.75rem;
+    content: "";
+    background-image: url(./media/Icon.svg);
+    border: none;
+}
+
+.chat_mes {
+    margin-bottom: 1rem;
+}
+
+.chat {
+    position: relative;
+    height: calc(100vh - 85px - 4rem - 1px);
+    overflow-y: scroll;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: white;
+}
+
+.cmc_name {
+    font-family: Lato;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.cmc_name span {
+    font-weight: 400;
+    color: #8D8D8D;
+    padding-left: 0.2rem;
+}
+
+.cmc_name:hover {
+    color: rgba(0, 0, 0, 0.315)
+}
+
+.cmc_text,
+.cmc_img {
+    font-family: Lato;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.cmc_img {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.chat_sep {
+    position: relative;
+    font-family: Lato;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    color: #8D8D8D;
+    margin: 1.5rem 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.chat_sep_text {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 10px;
+    bottom: -0.35rem;
+    background-color: white;
+}
+
+.cmc_img img {
+    margin-top: 0.5rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 0.3rem;
+}
+
+.cmc_img_like {
+    position: absolute;
+    background-color: white;
+    padding: 0 0.5rem;
+    box-shadow: 0px 2px 8px 0px #00000024;
+    border-radius: 0.25rem;
+    top: 95%;
+    left: 13rem;
+}
+
+.mes_field {
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    height: 4rem;
+    bottom: 0;
+}
+
+.mes_field img {
+    height: 1.3rem;
+    max-width: 2rem;
+    margin-right: 1.5rem;
+}
+
+.mes_field input {
+    width: 50%;
+}
+
+.mbtn img {
+    height: 1rem;
+}
+
+
+/* Profile */
+
+.profile {
+    background-color: #E8E8EB;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+}
+
+.profile__avatar,
+.profile__avatar img {
+    width: 100%;
+}
+
+.profile__avatar {
+    padding-bottom: 0.75rem;
+}
+
+.profile__name {
+    font-family: 'Lato';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+}
+
+.profile__post,
+.profile__about__field h6 {
+    color: #8D8D8D;
+    font-family: 'Lato';
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.profile__post {
+    padding-bottom: 0.75rem;
+}
+
+.profile__contacts {
+    padding-bottom: 0.75rem;
+}
+
+.profile__contacts__btn {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__contacts__btn img {
+    padding: 0.5rem;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.profile__actions {
+    padding-bottom: 1rem;
+}
+
+.profile__actions__message {
+    width: calc(100% - 40px);
+}
+
+.profile__about__field {
+    padding-bottom: 0.5rem;
+}
+
+.profile__about__field p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.profile__footer img {
+    width: 0.75rem;
+    margin-left: calc(100% - 0.75rem);
+}
